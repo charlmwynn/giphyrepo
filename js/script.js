@@ -10,9 +10,10 @@ async function displayGif() {
   //console preview
   console.log(images);
   
-  // Update the DOM with the gifs
+  // Update the DOM with the gifs (and some monkeys)
   const output = document.getElementById("gif-container"); 
   output.innerHTML = "";
+  output.innerHTML = '<div class="w-100 text-center mb-3" style="font-size:2rem;">🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒</div>'
 
     images.forEach(gif => {
     const imgURL = gif.images.original.url;
