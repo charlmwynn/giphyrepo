@@ -12,8 +12,7 @@ async function displayGif() {
   
   // Update the DOM with the gifs
   const output = document.getElementById("gif-container"); 
-    output.innerHTML = "";
-
+  output.innerHTML = "";
 
     images.forEach(gif => {
     const imgURL = gif.images.original.url;
@@ -23,6 +22,4 @@ async function displayGif() {
 
 const button = document.getElementById("fetch-gif-btn"); 
 
-button.addEventListener("click", function () { 
-  displayGif(); 
-});
+button.addEventListener("click", displayGif);
